@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffaf4d, #78cc6d); /* Gradient background with shades of orange and green */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0f8ff; /* Light blue background for container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #007bff; /* Dark blue title */
+    font-size: 24px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.description p {
+    text-align: justify;
+}
+
+.image {
+    flex: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.chat-container {
+    margin-top: 20px;
+}
+
+.chat-box {
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 50px;
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        margin-right: 0;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
+/* Existing CSS styles */
+
+/* Add new styles for the button */
+.button-container {
+    text-align: start;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 30px;
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Mobile view */
+@media only screen and (min-width: 601px) {
+    .button-container {
+        display: none; /* Hide button in desktop view */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        margin-right: 0;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
