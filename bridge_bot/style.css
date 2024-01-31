@@ -109,7 +109,6 @@ button:hover {
 
 /* Add new styles for the button */
 .button-container {
-    text-align: start;
     margin-top: 20px;
 }
 
@@ -120,6 +119,10 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .button-container button:hover {
@@ -145,4 +148,46 @@ button:hover {
     .image {
         margin-top: 20px;
     }
+}
+
+.mobile-only {
+    background-color: #fff; /* White background */
+    color: #007bff; /* Blue text color */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensure the button is displayed as a block element */
+    margin: 20px auto; /* Center the button horizontally with some margin */
+    width: auto; /* Set a fixed width to prevent wrapping */
+    text-align: center; /* Center the text within the button */
+}
+
+.mobile-only:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.user-options {
+    margin-top: 10px;
+}
+
+.user-option {
+    display: inline-block;
+    margin: 5px auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; 
+}
+
+#user-input {
+    margin-top: 10px;
+    padding: 8px;
+    width: calc(100% - 76px); /* Adjust width to account for button */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
